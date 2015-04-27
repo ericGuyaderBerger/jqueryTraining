@@ -1,0 +1,16 @@
+form ul,form li{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+
+/* 
+*  Modification Bootstrap pour deux labels successifs. 
+*  Pas de marge pour le second s'il a la classe form-control
+*/
+.form-group label+label.control-label{
+	padding-left:0;
+}
+
+.complement{}

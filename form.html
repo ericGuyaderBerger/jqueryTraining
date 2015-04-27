@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Formulaire</title>
+    <meta charset="utf-8" />
+    
+    <!-- CSS Bootstrap pour un peu de présentation -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/gen.css" media="all" />
+    
+</head>
+<body>
+	<div class="container">
+    <h1>Inscription</h1>
+    
+    <form action="" method="post">
+        <ul>
+            <li class="form-group">
+                <label for="iNom">Nom :</label>
+                <input type="text" name="nom" id="iNom" size="30" maxlength="30" class="form-control" required />
+            </li>
+            <li class="form-group">
+                <label for="iAge" class="control-label">Age :</label>
+                <input type="text" name="age" id="iAge" size="3" maxlength="3" class="form-control" required />
+            </li>
+            <li class="form-group">
+                <label for="iCSP" class="control-label">CSP :</label>
+                <select name="csp" id="iCSP" class="form-control">
+                    <option value="a">Agriculteur</option>
+                    <option value="o">Ouvrier</option>
+                    <option value="e">Employé</option>
+                    <option value="f">Fonctionnaire</option>
+                    <option value="c">Cadre</option>
+                    <option value="p">Profession libérale</option>
+                    <option value="x">Autre</option>
+                </select>
+            </li>
+            <li class="form-group">
+                <label class="control-label">Sexe :</label>
+				<span class="radio">
+                <label class="radio-inline"><input type="radio" name="sexe" id="sexeF" value="F" />Féminin</label>
+                <label class="radio-inline"><input type="radio" name="sexe" id="sexeM" value="M" />Masculin</label>
+                </span>
+            </li>
+            <li class="form-group">
+            	<span class="checkbox">
+                	<label><input type="checkbox" value="1" id="iSpam" name="spam" checked="checked"  />Raaahhh... OUI, je veux recevoir votre newsletter même si c'est pour la mettre directement à la corbeille !</label>
+                </span>
+            </li>
+            <li class="form-group">
+                <label class="control-label">Mode de communication préféré</label>
+                <ul>
+                    <li class="radio">
+                        <label><input type="radio" name="mode-comm" value="tel" id="mc-tel" />Téléphone</label><label class="control-label" for="mc-tel-num">, à ce numéro </label>
+                        <input class="complement" name="mc-tel-num" id="mc-tel-num" size="10" class="form-control" />
+                    </li>
+                    <li class="radio">
+                        <label><input type="radio" name="mode-comm" value="mail" id="mc-mail"/>Mail</label><label class="control-label" for="mc-mail-adr">, à cette adresse </label>
+                        <input class="complement" name="mc-mail-adr" id="mc-mail-adr" size="50" class="form-control" />
+                    </li>
+                    <li class="radio">
+                        <label><input type="radio" name="mode-comm" value="tweeter" id="mc-twt" />Tweeter</label><label class="control-label" for="mc-twt-tag">, à ce hashtag </label>
+                        <input class="complement" name="mc-twt-tag" id="mc-twt-tag" class="form-control" />
+                    </li>
+                </ul>
+            </li>
+            <li class="form-group">
+                <label for="iCommentaire" class="control-label">Commentaires</label><br />
+                <textarea name="commentaire" id="iCommentaire" rows="10" cols="35" class="form-control"></textarea>
+            </li>
+            <li class="form-group">
+                <input type="submit" name="btOK" value="OK"  class="btn btn-primary" />
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="reset" name="btReinit" value="Réinitialiser" class="btn btn-primary" />
+            </li>
+        </ul>
+    </form>
+</div>
+</body>
+</html>

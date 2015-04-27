@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Evénements - la magie est dans l'air</title>
+	
+	<!-- CSS Bootstrap pour un peu de présentation -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/gen.css" media="all" />
+    
+    <script src="js/jquery-1.11.2.js"></script>
+    <script src="js/exo3-events.js"></script>
+    
+</head>
+<body>
+<div class="container">
+	<div class="jumbotron">
+		<h1>Boutons magiques</h1>
+		<p>
+			<button type="button" id="btn1" class="btn btn-success btn-lg">Cache-cache</button>
+			<button type="button" id="btn2" class="btn btn-success btn-lg">Survol</button>
+			<button type="button" id="btn3" class="btn btn-success btn-lg">Formulaire</button>
+		</p>
+		<div class="hidden" id="cache-1">
+			<p class="lead">Me voilà !</p>
+		</div>
+
+		<div class="hidden" id="cache-2">
+			<img src="img/smiley.png" alt="Smiley" />
+		</div>
+		
+		<div id="cache-3" class="hidden">
+			<form method="post" action="" class="form-inline">
+			<h3>Votre mot de passe, svp</h3>
+				<ul class="">
+					<li class="form-group has-feedback">
+						<div class="input-group input-group-lg">
+						<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+      					<input type="text" class="form-control" id="pass" size="50">
+    					<span class="glyphicon glyphicon-ok form-control-feedback hidden"></span>
+    					<span class="glyphicon glyphicon-warning-sign form-control-feedback hidden"></span>
+    					</div>
+						<input type="submit" class="btn btn-lg btn-default" value="OK">
+					</li>
+				</ul>
+			</form>
+		</div>
+		
+	</div>
+</div>
+</body>
+</html>
